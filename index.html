@@ -42,13 +42,70 @@ h2 {
 
 <h1>LE SITE DE L'ECRIT VAIN</h1>
 <h1>Daniel Maurer</h1>
+<style>
+
+.Auteur {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.Auteur img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.TexteAuteur {
+    max-width: 700px;
+}
+
+.Titre {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ---------- VERSION SMARTPHONE ---------- */
+
+@media (max-width: 768px) {
+
+    .Auteur {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Auteur img {
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .TexteAuteur {
+        max-width: 90%;
+    }
+
+}
+
+</style>
+
 <div class="Auteur">
+
     <img src="Dan-1.jpg" alt="Portrait de l'auteur">
-<div class="Titre">L'auteur en 2005</div>
-<p>Essayiste et romancier, spécialiste des Expériences de Mort Imminente (EMI) et des États Modifiés de Conscience (EMC).</p>
-<p>Un écrit est vain lorsqu'il n'atteint pas le lectorat pour lequel il a été conçu.</p>
-<p>Si NUL n'est prophète en son pays, c'est parce que NUL ne sait pas se faire entendre, qu'il n'a pas les bons codes de communication. NUL va donc tenter d'intéresser quelques lecteurs par le biais de cette publication sur le Web.</p>
-<p>Si ceux qui disent du mal de moi savaient exactement ce que je pense d'eux, ils en diraient bien davantage (Sacha Guitry).</p>
+
+    <div class="TexteAuteur">
+        <div class="Titre">L'auteur en 2005</div>
+
+        <p>Essayiste et romancier, spécialiste des Expériences de Mort Imminente (EMI) et des États Modifiés de Conscience (EMC).</p>
+
+        <p>Un écrit est vain lorsqu'il n'atteint pas le lectorat pour lequel il a été conçu.</p>
+
+        <p>Si NUL n'est prophète en son pays, c'est parce que NUL ne sait pas se faire entendre, qu'il n'a pas les bons codes de communication. NUL va donc tenter d'intéresser quelques lecteurs par le biais de cette publication sur le Web.</p>
+
+        <p>Si ceux qui disent du mal de moi savaient exactement ce que je pense d'eux, ils en diraient bien davantage (Sacha Guitry).</p>
+    </div>
+
+</div>
            <hr>
      <div class="titre"></div>
         <h2>Présentation</h2>
