@@ -3,78 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <title>Daniel Maurer - Auteur</title>
+
 <style>
-   body {
+body {
     font-family: Georgia, serif;
     max-width: 800px;
     margin: auto;
-    padding: 72px;
-   background-color: #f0f8ff; /* bleu très léger */
-     color: #333;
-     body {
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-  font-family: Georgia, serif;
+    padding: 40px;
+    background-color: #f0f8ff; /* bleu très léger */
+    color: #333;
+    line-height: 1.6;
 }
-}
-h1 {
-    text-align: center;
-}
-h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
-}
-.livre {
-    margin-bottom: 40px;
-}
-.titre {
-    font-size: 15px;
-    font-weight: bold;
-}
-.livre img {
-    width: 150px;
-    float: left;
-    margin-right: 20px;
-     <div class="livre">
-    <img src="d-m-11-24-mini.jpg" alt="Couverture Roman 1">
-}
-.clearfix {
-    clear: both;
-}
-</style>
-</head>
-<header class="entete-site">
-    <h1>LE SITE DE L'ECRIT VAIN</h1>
-    <p class="citation">
-        L'écrit est vain s'il n'atteint pas le lectorat auquel il est destiné.
-    </p>
-    <h2 class="auteur">Daniel Maurer</h2>
-</header>
 
-<style>
+/* En-tête du site */
 .entete-site {
-    text-align: center;      /* centre tout le bloc */
-    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .entete-site h1 {
     margin-bottom: 10px;
-    letter-spacing: 2px;     /* effet plus élégant */
+    letter-spacing: 2px;
 }
 
 .citation {
     font-style: italic;
     margin: 5px 0;
-    line-height: 1.3;
 }
 
 .auteur {
     margin-top: 10px;
     font-weight: normal;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
 }
-</style>
 
+/* Livres */
+.livre {
+    margin-bottom: 40px;
+}
+
+.livre img {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+.titre {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Section auteur */
 .Auteur {
     display: flex;
     align-items: flex-start;
@@ -97,6 +81,42 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Version smartphone */
+@media (max-width: 600px) {
+    .Auteur {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .livre img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="entete-site">
+    <h1>LE SITE DE L'ECRIT VAIN</h1>
+    <p class="citation">
+        L'écrit est vain s'il n'atteint pas le lectorat auquel il est destiné.
+    </p>
+    <h2 class="auteur">Daniel Maurer</h2>
+</header>
+
+<div class="livre">
+    <img src="d-m-11-24-mini.jpg" alt="Couverture Roman 1">
+    <p class="titre">Titre du livre</p>
+    <p>Description du livre...</p>
+    <div class="clearfix"></div>
+</div>
+
+</body>
+</html>
 /* ---------- VERSION SMARTPHONE ---------- */
 
 @media (max-width: 768px) {
