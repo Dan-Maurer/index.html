@@ -45,7 +45,10 @@ h2 {
     margin-bottom: 40px;
     overflow: hidden;   /* corrige le problème d'affichage */
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 .livre img {
     width: 150px;
     float: left;
@@ -56,7 +59,7 @@ h2 {
     <img src="d-m-11-24-mini.jpg" alt="Couverture Roman 1">
     
     <p class="titre">Roman 1</p>
-    <p>Description du livre...</p>
+    <p>Description du livre </p>
 </div>
 
 .titre {
@@ -91,30 +94,12 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Version smartphone */
-@media (max-width: 768px) {
-
-    .Auteur {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .Auteur img {
-        width: 70%;
-        max-width: 300px;
-    }
-
-    .TexteAuteur {
-        max-width: 90%;
-    }
-
     .livre img {
         float: none;
         display: block;
         margin: 0 auto 15px auto;
     }
-}
+
 </style>
 
 </head>
