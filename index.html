@@ -10,7 +10,7 @@ body {
     max-width: 800px;
     margin: auto;
     padding: 40px;
-    background-color: #f0f8ff; /* bleu très léger */
+    background-color: #f0f8ff;
     color: #333;
     line-height: 1.6;
 }
@@ -82,11 +82,21 @@ body {
 }
 
 /* Version smartphone */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
     .Auteur {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .Auteur img {
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .TexteAuteur {
+        max-width: 90%;
     }
 
     .livre img {
@@ -96,6 +106,7 @@ body {
     }
 }
 </style>
+
 </head>
 
 <body>
