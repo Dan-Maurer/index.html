@@ -7,147 +7,119 @@
 <style>
 body {
     font-family: Georgia, serif;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 40px;
     background-color: #f0f8ff;
     color: #333;
     line-height: 1.6;
 }
+
 h2 {
-    margin-top: 20px;
+    margin-top: 40px;
 }
-/* En-tête du site */
+
+/* En-tête */
 .entete-site {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.entete-site h1 {
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+/* Auteur */
+.Auteur {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: flex-start;
 }
 
-.citation {
+.Auteur img {
+    width: 250px;
+    border-radius: 8px;
+}
+
+.TexteAuteur {
+    flex: 1;
+}
+
+/* Citations */
+.citations {
+    margin-top: 15px;
     font-style: italic;
-    margin: 5px 0;
-}
-
-.auteur {
-    margin-top: 10px;
-    font-weight: normal;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
 }
 
 /* Livres */
 .livre {
-    margin-bottom: 40px;
-    overflow: hidden;   /* corrige le problème d'affichage */
-}
-
-.livre {
     display: flex;
     gap: 20px;
     margin-bottom: 40px;
-    align-items: flex-start;
 }
 
 .livre img {
     width: 150px;
-    height: auto;
 }
 
 .texte-livre {
     flex: 1;
 }
 
-<div class="livre">
-    <img src="d-m-11-24-mini.jpg" alt="Couverture du roman 1">
-
-    <div class="texte-livre">
-        <p class="titre">Roman 1</p>
-        <p>Description du livre </p>
-    </div>
-</div>
-
 .titre {
-    font-size: 15px;
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
-.clearfix {
-    clear: both;
+hr {
+    margin: 40px 0;
 }
-
-/* Section auteur */
-.Auteur {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.Auteur img {
-    width: 250px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.TexteAuteur {
-    max-width: 700px;
-}
-
-.Titre {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-    
-    
 </style>
-
 </head>
 
 <body>
 
 <header class="entete-site">
-    <h1>LE SITE DE L'ECRIT VAIN</h1>
-    <p class="citation">
-        L'écrit est vain s'il n'atteint pas le lectorat auquel il est destiné.
-    </p>
-    <h2 class="auteur">Daniel Alphonse Edouard Maurer</h2>
+    <h1>LE SITE DE L'ÉCRIT VAIN</h1>
+    <p class="citation">L'écrit est vain s'il n'atteint pas le lectorat auquel il est destiné.</p>
+    <h2>Daniel Maurer</h2>
+
 </header>
 
+<div class="Auteur">
+    <img src="Dan2.jpg" alt="Portrait de l'auteur">
+
+<body>
+
+<header class="entete-site">
+    <h1>LE SITE DE L'ECRIT VAIN</h1>
+    
+    <h2 class="auteur">Daniel Alphonse Edouard Maurer</h2>
+</header>
+<div class="Auteur">
+    <img src="Dan2.jpg" alt="Portrait de l'auteur">
+
+    <div class="TexteAuteur">
+
+        <p>Essayiste et romancier, spécialiste des Expériences de Mort Imminente (EMI) et des États Modifiés de Conscience (EMC).</p>
+
+        <p>
+        Je n’ai pas la prétention d’être un auteur reconnu. Il s'en faut de beaucoup. Si les intrigues de mes romans sont intéressantes, parait-il, j'ai bien conscience que leur narration présente encore quelques faiblesses.
+        Cependant, je me console de ne pas avoir été édité par une maison d’édition traditionnelle. Le secteur est aujourd’hui saturé de propositions, au point que certains éditeurs n'ont plus le temps de lire les textes qu'ils reçoivent, d'autres refusent toute nouvelle soumission de manuscrit. Pour vous donner une idée : en 2025, la BNF a recensé 78 000 publications, dont 484 nouveaux romans.<br>
+        </p>
+
+        <div class="citations">
+            <p>Quatre citations dont la pertinence traverse le temps :</p>
+            <p>— Nul n'est prophète en son pays. (Évangile de Luc)</p>
+            <p>— Deux choses sont infinies : l'Univers et la bêtise humaine. (Albert Einstein)</p>
+            <p>— Un pessimiste voit la difficulté dans chaque opportunité. (Winston Churchill)</p>
+            <p>— Si ceux qui disent du mal de moi savaient ce que je pense d’eux, ils en diraient davantage. (Sacha Guitry)</p>
+        </div>
+
+    </div>
+</div>
 
 
 </body>
 </html>
 
-
-</style>
-
-<div class="Auteur">
-
-    <img src="Dan2.jpg" alt="Portrait de l'auteur">
-
-    <div class="TexteAuteur">
-                 <p style="margin-bottom: 10px;"></p>    
-         <p>Essayiste et romancier, spécialiste des Expériences de Mort Imminente (EMI) et des États Modifiés de Conscience (EMC).</p>
-
-        <p style="line-height: 1.2;">
-        Je n’ai pas la prétention d’être un auteur reconnu. Il s'en faut de beaucoup. Si les intrigues de mes romans sont intéressantes, parait-il, j'ai bien conscience que leur narration présente encore quelques faiblesses.
-        Cependant, je me console de ne pas avoir été édité par une maison d’édition traditionnelle. Le secteur est aujourd’hui saturé de propositions, au point que certains éditeurs n'ont plus le temps de lire les textes qu'ils reçoivent, d'autres refusent toute nouvelle soumission de manuscrit. Pour vous donner une idée : en 2025, la BNF a recensé 78 000 publications, dont 484 nouveaux romans.<br>
-        Entre nous, concernant les essais, les comptes-rendus de mes recherches m'ont valu une reconnaissance qui suffit à combler mon ego</p>
-        <p style="margin-bottom: 10px;"></p>
-        <p>Quatre citations dont la pertinence traverse le temps :</p>
-      <p style="line-height: 1.2;">
-    — Nul n'est prophète en son pays.(Evangile de Luc)<br>
-    — Deux choses sont infinies : l'Univers et la bêtise humaine. Quoique pour l'Univers, je n'ai pas de certitude absolue. (Albert Einstein)<br>
-    — Un pessimiste voit la difficulté dans chaque opportunité, un optimiste voit l'opportunité dans chaque difficulté. (Winston Churchill)<br>
-    — Si ceux qui disent du mal de moi savaient exactement ce que je pense d'eux, ils en diraient bien davantage. (Sacha Guitry)</p>   
-    
-</div>
 
 </div>
            <hr>
