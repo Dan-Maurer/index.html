@@ -45,21 +45,30 @@ h2 {
     margin-bottom: 40px;
     overflow: hidden;   /* corrige le problème d'affichage */
 }
-img {
-    max-width: 100%;
-    height: auto;
+
+.livre {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: flex-start;
 }
+
 .livre img {
     width: 150px;
-    float: left;
-    margin-right: 20px;
+    height: auto;
+}
+
+.texte-livre {
+    flex: 1;
 }
 
 <div class="livre">
-    <img src="d-m-11-24-mini.jpg" alt="Couverture Roman 1">
-    
-    <p class="titre">Roman 1</p>
-    <p>Description du livre </p>
+    <img src="d-m-11-24-mini.jpg" alt="Couverture du roman 1">
+
+    <div class="texte-livre">
+        <p class="titre">Roman 1</p>
+        <p>Description du livre </p>
+    </div>
 </div>
 
 .titre {
@@ -99,7 +108,7 @@ img {
         display: block;
         margin: 0 auto 15px auto;
     }
-
+    
 </style>
 
 </head>
