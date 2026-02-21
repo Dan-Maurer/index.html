@@ -35,16 +35,20 @@ h2 {
 .Auteur {
     display: flex;
     align-items: flex-start;
-    gap: 22px;
+    gap: 25px;
+}
+
+.col-gauche {
+    width: 250px;
 }
 
 .Auteur img {
-    width: 250px;
+    width: 100%;
     border-radius: 8px;
 }
 
 .citations-gauche {
-    max-width: 250px;
+    margin-top: 10px;
     font-style: italic;
     line-height: 1.25;
 }
@@ -104,13 +108,15 @@ h2 {
 
 <div class="Auteur">
 
-    <img src="Dan2.jpg" alt="Portrait de l'auteur">
+    <div class="col-gauche">
+        <img src="Dan2.jpg" alt="Portrait de l'auteur">
 
-    <div class="citations-gauche">
-        <p>— Nul n'est prophète en son pays. (Évangile de Luc)</p>
-        <p>— Il n'existe que deux choses infinies, l'Univers et la bêtise humaine... (Albert Einstein)</p>
-        <p>— Un pessimiste voit la difficulté dans chaque opportunité... (Winston Churchill)</p>
-        <p>— Si ceux qui disent du mal de moi savaient ce que je pense exactement d’eux... (Sacha Guitry)</p>
+        <div class="citations-gauche">
+            <p>— Nul n'est prophète en son pays. (Évangile de Luc)</p>
+            <p>— Il n'existe que deux choses infinies, l'Univers et la bêtise humaine... (Albert Einstein)</p>
+            <p>— Un pessimiste voit la difficulté dans chaque opportunité... (Winston Churchill)</p>
+            <p>— Si ceux qui disent du mal de moi savaient ce que je pense exactement d’eux... (Sacha Guitry)</p>
+        </div>
     </div>
 
     <div class="TexteAuteur">
