@@ -34,9 +34,8 @@ h2 {
 /* Auteur */
 .Auteur {
     display: flex;
-    gap: 18px;
-    margin-top: 10px;
     align-items: flex-start;
+    gap: 22px;
 }
 
 .Auteur img {
@@ -44,9 +43,18 @@ h2 {
     border-radius: 8px;
 }
 
+.citations-gauche {
+    max-width: 250px;
+    font-style: italic;
+    line-height: 1.25;
+}
+
+.citations-gauche p {
+    margin: 4px 0;
+}
+
 .TexteAuteur {
     flex: 1;
-    max-width: 700px;
     line-height: 1.35;
 }
 
@@ -95,15 +103,14 @@ h2 {
 </header>
 
 <div class="Auteur">
-    <div>
-        <img src="Dan2.jpg" alt="Portrait de l'auteur">
 
-        <div class="citations-gauche">
-            <p>— Nul n'est prophète en son pays. (Évangile de Luc)</p>
-            <p>— Il n'existe que deux choses infinies, l'Univers et la bêtise humaine... (Albert Einstein)</p>
-            <p>— Un pessimiste voit la difficulté dans chaque opportunité... (Winston Churchill)</p>
-            <p>— Si ceux qui disent du mal de moi savaient ce que je pense exactement d’eux... (Sacha Guitry)</p>
-        </div>
+    <img src="Dan2.jpg" alt="Portrait de l'auteur">
+
+    <div class="citations-gauche">
+        <p>— Nul n'est prophète en son pays. (Évangile de Luc)</p>
+        <p>— Il n'existe que deux choses infinies, l'Univers et la bêtise humaine... (Albert Einstein)</p>
+        <p>— Un pessimiste voit la difficulté dans chaque opportunité... (Winston Churchill)</p>
+        <p>— Si ceux qui disent du mal de moi savaient ce que je pense exactement d’eux... (Sacha Guitry)</p>
     </div>
 
     <div class="TexteAuteur">
@@ -112,6 +119,7 @@ h2 {
         Je ne suis pas un auteur connu, ni même reconnu. Loin s'en faut...
         </p>
     </div>
+
 </div>
 
 <hr>
