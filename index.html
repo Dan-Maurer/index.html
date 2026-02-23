@@ -6,6 +6,32 @@
 <meta name="description" content="Site officiel de Daniel Maurer, premier auteur français à avoir publié un ouvrage sur les expériences de mort imminente (EMI). Essais, états modifiés de conscience, romans, bio et publications.">
 
 <style>
+.form-contact {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-contact input,
+.form-contact textarea {
+    width: 100%;
+    padding: 8px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+.form-contact button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-contact button:hover {
+    background: #555;
+}
+
 body {
     font-family: Georgia, serif;
     max-width: 1150px;
@@ -110,14 +136,14 @@ h2 {
 <header class="entete-site">
     <h1>LE SITE DE L'ÉCRIT VAIN</h1>
     <p>L'écrit est vain s'il n'atteint pas le lectorat auquel il est destiné.</p>
-    <h2>Daniel Maurer – Essais sur les expériences de mort imminente et les états modifiés de conscience</h2>
+    <h2>Daniel Maurer présente ses éssais sur les expériences de mort imminente et les états modifiés de conscience</h2>
     <p>Pionnier français des études sur les expériences de mort imminente (EMI), Daniel Maurer explore depuis plus de 40 ans les états modifiés de conscience, la survie de la conscience et les frontières de la réalité perceptible.</p>
     <p class="signature">Daniel Maurer</p>
     </header>
 
 <div class="Auteur">
 
-    <img src="Dan2.jpg" alt="Portrait de l'auteur">
+    <img src="Dan4.jpg" alt="Portrait de l'auteur">
 
     <div class="TexteAuteur">
         <p>Essayiste spécialiste des Expériences de Mort Imminente (EMI) et des États Modifiés de Conscience (EMC).</p>
@@ -339,7 +365,31 @@ Après une longue pause, je me suis essayé à l’écriture de romans avec " Un
             </div>
 
 </div>
+<hr>
 
+<h2>Contact</h2>
+
+<p>
+Pour toute question, réaction ou témoignage relatif aux expériences de mort imminente, aux états modifiés de conscience ou aux ouvrages présentés sur ce site, vous pouvez laisser un message via le formulaire ci-dessous.
+</p>
+
+<form action="contact.php" method="post" class="form-contact">
+
+    <label for="nom">Nom ou pseudonyme :</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Votre message :</label><br>
+    <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+    <!-- Champ anti-spam invisible -->
+    <input type="text" name="site_web" style="display:none">
+
+    <button type="submit">Envoyer</button>
+
+</form>
 </body>
 </html>
 
